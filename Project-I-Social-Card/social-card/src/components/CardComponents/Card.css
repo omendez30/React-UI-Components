@@ -1,1 +1,28 @@
 /* All styles for your Card Components live here */
+section {
+  width: 100%;
+  display: flex;
+  justify-content: flex-end;
+}
+h3 {
+  padding-left: 10px;
+}
+p {
+  width: 65%;
+  padding: 10px;
+}
+a {
+  text-decoration: none;
+  color: #787d78;
+  padding: 0 10px 0 10px;
+}
+a:hover {
+  color: black;
+}
+.card-container {
+  width: 70%;
+  border: 1px solid #c7c1c1;
+  border-radius: 5px;
+  margin-right: 200px;
+  height: 550px;
+}

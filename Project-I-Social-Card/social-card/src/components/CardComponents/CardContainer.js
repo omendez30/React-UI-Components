@@ -6,8 +6,10 @@ import CardContent from "./CardContent";
 const CardContainer = () => {
   return (
     <section className="card">
-      <CardBanner />
-      <CardContent />
+      <div className="card-container">
+        <CardBanner />
+        <CardContent />
+      </div>
     </section>
   );
 };

@@ -20,10 +20,10 @@ const HeaderTitle = () => {
   //   let n = month[d.getMonth()];
   //   document.getElementById("demo").innerHTML = n;
   return (
-    <div className="title">
+    <React.Fragment>
       <h1>Lambda School</h1>
       <h2>@LambdaSchool</h2>
-    </div>
+    </React.Fragment>
   );
 };
 export default HeaderTitle;
