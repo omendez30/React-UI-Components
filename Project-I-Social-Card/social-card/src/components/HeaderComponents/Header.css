@@ -5,9 +5,11 @@ header {
   flex-direction: row;
   justify-content: flex-start;
   margin-top: 20px;
+  border: 1px solid blue;
 }
 img {
   width: 100%;
+  border: 1px solid green;
 }
 h1,
 h2 {
@@ -36,6 +38,7 @@ header p {
   display: flex;
   flex-direction: column;
   padding: 10px;
+  border: 1px solid orange;
 }
 .header-title {
   display: flex;
