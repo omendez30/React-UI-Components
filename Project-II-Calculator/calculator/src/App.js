@@ -1,21 +1,43 @@
-import React from 'react';
-import './App.css';
+import React from "react";
+import "./App.css";
+
+import CalculatorDisplay from "./components/DisplayComponents/CalculatorDisplay";
+import NumberButton from "./components/ButtonComponents/NumberButton";
+import ActionButton from "./components/ButtonComponents/ActionButton";
+import btnContainer from "./components/ButtonComponents/btn-container";
 
 const App = () => {
   return (
-    <div>
-      <h3>Welcome to React Calculator</h3>
-      <p>
-        We have given you a starter project. You'll want to build out your
-        components in their respective files, remove this code and replace it
-        with the proper components.
-      </p>
-      <p>
-        <strong>
-          Don't forget to `default export` your components and import them here
-          inside of this file in order to make them work.
-        </strong>
-      </p>
+    <div className="app">
+      {/* <DisplayComponent />
+          <ButtonComponent /> */}
+      <CalculatorDisplay />
+      <btnContainer className="button-container">
+        <ActionButton className="text" text="clear" />
+        <NumberButton buttonStyle="operators" text="/" />
+      </btnContainer>
+      <btnContainer>
+        <NumberButton buttonStyle="numbers" text="7" />
+        <NumberButton buttonStyle="numbers" text="8" />
+        <NumberButton buttonStyle="numbers" text="9" />
+        <NumberButton buttonStyle="operators" text="X" />
+      </btnContainer>
+      <btnContainer>
+        <NumberButton buttonStyle="numbers" text="4" />
+        <NumberButton buttonStyle="numbers" text="5" />
+        <NumberButton buttonStyle="numbers" text="6" />
+        <NumberButton buttonStyle="operators" text="-" />
+      </btnContainer>
+      <btnContainer>
+        <NumberButton buttonStyle="numbers" text="1" />
+        <NumberButton buttonStyle="numbers" text="2" />
+        <NumberButton buttonStyle="numbers" text="3" />
+        <NumberButton buttonStyle="operators" text="+" />
+      </btnContainer>
+      <btnContainer>
+        <NumberButton buttonStyle="numbers" text="0" />
+        <NumberButton buttonStyle="numbers" text="=" />
+      </btnContainer>
     </div>
   );
 };
