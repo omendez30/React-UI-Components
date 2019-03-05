@@ -22,7 +22,7 @@ const HeaderTitle = () => {
   return (
     <React.Fragment>
       <h1>Lambda School</h1>
-      <h2>@LambdaSchool</h2>
+      <span>@LambdaSchool - {moment().format("D MMM")}</span>
       <ul>
         <li>26 Jan</li>
       </ul>

@@ -20,8 +20,8 @@ a:hover {
   color: black;
 }
 .card-container {
-  width: 70%;
+  width: 80%;
   border: 1px solid #c7c1c1;
   border-radius: 5px;
-  margin-right: 200px;
+  margin-right: 100px;
 }

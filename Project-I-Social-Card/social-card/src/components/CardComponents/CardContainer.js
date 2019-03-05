@@ -7,8 +7,10 @@ const CardContainer = () => {
   return (
     <section className="card">
       <div className="card-container">
-        <CardBanner />
-        <CardContent />
+        <a href="https://www.reactjs.org">
+          <CardBanner />
+          <CardContent />
+        </a>
       </div>
     </section>
   );
